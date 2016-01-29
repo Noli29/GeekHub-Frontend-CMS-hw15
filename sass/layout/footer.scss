@@ -1,10 +1,28 @@
 footer {
-  height: 108px;
+  height: 80px;
   background-color: #323232;
   padding-top: 30px;
-  color: $color-white;
   font-family: $font;
-  font-size: 12px;
   font-weight: $font-weight-h3;
 
+
+  p{
+    font-size: 16px;
+    color: #ff4643;
+  }
+  span{
+    text-decoration: underline;
+    color: #5c59df;
+  }
+
+  #column-1 {
+    width: 50%;
+    float: left;
+
+  }
+  #column-2 {
+    width: 50%;
+    float: left;
+    
+  }
 }
