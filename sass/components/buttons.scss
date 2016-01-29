@@ -1,0 +1,62 @@
+.button {
+  display: inline-block;
+  padding: 10px 45px;
+  background-color: #F1BB00;
+  text-decoration: none;
+  transition: .2s linear;
+  a{
+    text-shadow: 0 -1px 0 ;
+    color: $color-white;
+    font-family: $font;
+    font-size: 16px;
+    line-height: 16px;
+  }
+
+  &:hover {
+    background: #1b6d85;
+    transition: .2s linear;
+    color: #F1BB00;
+  }
+}
+
+.button-price {
+  display: inline-block;
+  padding: 10px 45px;
+  background-color: #F1BB00;
+  text-decoration: none;
+  transition: .2s linear;
+  a{
+    text-shadow: 0 -1px 0 ;
+    color: $color-white;
+    font-family: $font;
+    font-size: 16px;
+    line-height: 16px;
+  }
+
+  &:hover {
+    background: #1b6d85;
+    transition: .2s linear;
+    color: #F1BB00;
+  }
+}
+
+.price-btn {
+  display: inline-block;
+  padding: 5px 5px;
+  background-color: #F1BB00;
+  text-decoration: none;
+  transition: .2s linear;
+  a{
+    text-shadow: 0 -1px 0 ;
+    color: $color-white;
+    font-family: $font;
+    font-size: 16px;
+    line-height: 16px;
+  }
+
+  &:hover {
+    background: #1b6d85;
+    transition: .2s linear;
+    color: #F1BB00;
+  }
+}

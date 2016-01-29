@@ -1,0 +1,28 @@
+footer {
+  height: 108px;
+  background-color: #323232;
+  padding-top: 30px;
+  color: $color-white;
+  font-family: $font;
+  font-size: 12px;
+  font-weight: $font-weight-h3;
+
+  #column-1 {
+    width: 30%;
+    float: left;
+    min-height: 100%;
+  }
+
+  #column-2 {
+    width: 40%;
+    min-height: 100%;
+    float: left;
+  }
+  #column-3 {
+    width: 30%;
+    min-height: 100%;
+    float: left;
+  }
+
+  img {max-width: 100%}
+}

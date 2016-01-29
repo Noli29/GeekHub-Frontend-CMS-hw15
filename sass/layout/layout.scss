@@ -1,0 +1,29 @@
+.container{
+  margin: 0 auto;
+}
+
+.container::before,
+.container::after,
+.clearfix::before,
+.clearfix::after{
+  content: '';
+  display: table;
+}
+.container::after,
+.clearfix::after{
+  clear: both;
+}
+
+body {
+  font-family: $font;
+}
+.wrapper {
+  overflow: hidden;
+}
+.container {
+  text-align: $text-c;}
+
+.m-page{
+  margin: 0 auto;
+}
+
