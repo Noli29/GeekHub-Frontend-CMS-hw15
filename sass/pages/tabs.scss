@@ -1,0 +1,112 @@
+@import url("http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css");
+
+main {
+
+  .tabs {
+
+    padding: 50px 0 50px 0;
+    margin: 0 auto;
+
+    h2{
+      font-family: $font;
+      font-size: 36px;
+      font-weight: $font-weight-p;
+      line-height: 36px;
+      color: #555;
+    }
+
+    section {
+      display: none;
+      padding: 15px;
+      background: #fff;
+      border: 1px solid #ddd;
+    }
+
+    img{
+      max-width: 100%;
+      float: left;
+    }
+
+    p{
+      text-align: $text-c;
+      padding: 25px 0 25px 0;
+    }
+  }
+  .tabs input {
+    display: none;
+  }
+
+  .tabs label {
+    display: inline-block;
+    margin: 0 0 -1px;
+    padding: 15px 25px;
+    font-weight: 600;
+    text-align: center;
+    color: #aaa;
+    border: 1px solid #ddd;
+    background: #f1f1f1;
+    border-radius: 3px 3px 0 0;
+  }
+  /* шрифт-иконки от Font Awesome в формате Unicode */
+  .tabs label:before {
+    font-family: "fontawesome", sans-serif;
+    font-weight: normal;
+    margin-right: 10px;
+  }
+  .tabs label[for*="1"]:before {
+    content: "\f007";
+  }
+  .tabs label[for*="2"]:before {
+    content: "\f007";
+  }
+  .tabs label[for*="3"]:before {
+    content: "\f007";
+  }
+  .tabs label[for*="4"]:before {
+    content: "\f007";
+  }
+  .tabs label[for*="5"]:before {
+    content: "\f007";
+  }
+  .tabs label[for*="6"]:before {
+    content: "\f007";
+  }
+
+  .tabs label:hover {
+    color: #888;
+    cursor: pointer;
+  }
+
+  .tabs input:checked + label {
+    color: #555;
+    border: 1px solid #ddd;
+    border-top: 1px solid #009933;
+    border-bottom: 1px solid #fff;
+    background: #fff;
+  }
+
+  #tab1:checked ~ #content1,
+  #tab2:checked ~ #content2,
+  #tab3:checked ~ #content3,
+  #tab4:checked ~ #content4,
+  #tab5:checked ~ #content5,
+  #tab6:checked ~ #content6 {
+    display: block;
+  }
+
+  @media screen and (max-width: 680px) {
+    .tabs label {
+      font-size: 0;
+    }
+
+    .tabs label:before {
+      margin: 0;
+      font-size: 18px;
+    }
+  }
+  @media screen and (max-width: 400px) {
+    .tabs label {
+      padding: 15px;
+    }
+  }
+}

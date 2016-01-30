@@ -34,16 +34,9 @@
                     </div>
                     <nav class="navbar navbar-default" role="navigation">
                         <ul class="nav navbar-nav left">
-                            <li class="nav-item dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Home</a>
-                                <ul class="dropdown-menu">
-                                    <li><a href="#" >Account</a></li>
-                                    <li><a href="#" class="icon-bar">Edit</a></li>
-                                    <li><a href="#" class="glyphicon glyphicon-envelope">Message</a></li>
-                                    <li><a href="#" class="icon-bar">Log out</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#">Foto</a></li>
+                            <li><a href="#">Account</a></li>
+                            <li><a href="#">Edit</a></li>
+                            <li><a href="#">Photo</a></li>
                             <li><a href="#">Users</a></li>
                             <li><a href="#">Contacts</a></li>
                             <li><a href="#" class="glyphicon glyphicon-paperclip"></a></li>
@@ -58,11 +51,193 @@
     <!-- main -->
 
     <main class="m-page">
-        <div></div>
-        <div></div>
-        <div class="modal-form"></div>
-        <div class="tabs"></div>
-        <div class="tooltip"></div>
+
+        <div class="accordion">
+            <div class="container">
+                <h2>Photo</h2>
+                <section class="accordion_item">
+                    <h3 class="title_block">Birthday</h3>
+                    <div class="info">
+                        <p class="info_item">
+                            This card has optional greetings: Happy Birthday!, Joyeux Anniversaire !,
+                            Happy Valentine's Day!, Congratulations!, Happy Anniversary!, Thank You!,
+                            Thinking of You!, Bon Voyage !, Get Well Soon!, You're Invited!, Just Saying Hi!,
+                            Warm Wishes!, Have a Nice Day!,
+                            This card has optional greetings: Happy Birthday!, Happy Belated Birthday!,
+                            Happy Mother's Day!, Happy Valentine's Day!, Happy Anniversary!, Congratulations!,
+                            You're Invited!, Come to the Party!, It's Tea Time!, Thinking of You!, Thank You!,
+                            Get Well Soon!, Just Saying Hi!, Have a Delightful Day!, [No Caption]
+                        </p>
+                        <img src="images/Happy_birthday.png">
+                    </div>
+                </section>
+                <section class="accordion_item">
+                    <h3 class="title_block">Walking through the city</h3>
+                    <div class="info">
+                        <img src="images/image3.png">
+                        <img src="images/image2.png">
+                    </div>
+                </section>
+                <section class="accordion_item">
+                    <h3 class="title_block">Picnic</h3>
+                    <div class="info">
+                        <p class="info_item">
+                            This card has optional greetings: Happy Birthday!, Joyeux Anniversaire !,
+                            Happy Valentine's Day!, Congratulations!, Happy Anniversary!, Thank You!,
+                            Thinking of You!, Bon Voyage !, Get Well Soon!, You're Invited!, Just Saying Hi!,
+                            Warm Wishes!, Have a Nice Day!,
+                            This card has optional greetings: Happy Birthday!, Happy Belated Birthday!,
+                            Happy Mother's Day!, Happy Valentine's Day!, Happy Anniversary!, Congratulations!,
+                            You're Invited!, Come to the Party!, It's Tea Time!, Thinking of You!, Thank You!,
+                            Get Well Soon!, Just Saying Hi!, Have a Delightful Day!
+                        </p>
+                        <img src="images/picnic.png">
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <div>
+            <div class="container"></div>
+        </div>
+
+        <div class="block">
+            <div class="container">
+                <h2>Setting up an account</h2>
+                <div class="demo">
+                    <label class="btn" for="modal-2">Edit</label>
+                </div>
+                <div class="Mymodal">
+                    <input class="modal-open" id="modal-2" type="checkbox" hidden>
+                    <div class="modal-wrap" aria-hidden="true" role="dialog">
+                        <label class="modal-overlay" for="modal-2"></label>
+                        <div class="modal-dialog">
+                            <div class="modal-header">
+                                <h3>Edit your account</h3>
+                                <label class="btn-close" for="modal-2" aria-hidden="true">×</label>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                    <input name="name" placeholder="* Your name" class="textbox" required />
+                                    <input name="emailaddress" placeholder="* Email" class="textbox" type="email" required />
+                                    <input name="emailaddress" placeholder="* Password" class="textbox" type="password" required />
+                                    <input name="submit" class="btn btn-form" type="submit" value="Submit" />
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="tabs">
+            <div class="container">
+                <h2>Users</h2>
+                <input id="tab1" type="radio" name="tabs" checked>
+                <label for="tab1" title="User 1">User 1</label>
+
+                <input id="tab2" type="radio" name="tabs">
+                <label for="tab2" title="User 2">User 2</label>
+
+                <input id="tab3" type="radio" name="tabs">
+                <label for="tab3" title="User 3">User 3</label>
+
+                <input id="tab4" type="radio" name="tabs">
+                <label for="tab4" title="User 4">User 4</label>
+
+                <input id="tab5" type="radio" name="tabs">
+                <label for="tab5" title="User 5">User 5</label>
+
+                <input id="tab6" type="radio" name="tabs">
+                <label for="tab6" title="User 6">User 6</label>
+
+                <section id="content1">
+                    <img src="images/users.png">
+                    <p>
+                        A user is a person who uses a computer or network service. Users generally use
+                        a system or a software product without the technical expertise required to fully
+                        understand it. Power users use advanced features of programs, though they are not
+                        necessarily capable of computer programming and system administration.
+                        A user often has a user account and is identified to the system by a username (or user name).
+                        Other terms for username include login name, screen name (or screenname), nickname (or nick)
+                        and handle, which is derived from the identical Citizen's Band radio term.
+                        Some software products provide services to other systems and have no direct end users.
+                    </p>
+                </section>
+                <section id="content2">
+                    <img src="images/user.png">
+                    <p>
+                        A user is a person who uses a computer or network service. Users generally use
+                        a system or a software product without the technical expertise required to fully
+                        understand it. Power users use advanced features of programs, though they are not
+                        necessarily capable of computer programming and system administration.
+                        A user often has a user account and is identified to the system by a username (or user name).
+                        Other terms for username include login name, screen name (or screenname), nickname (or nick)
+                        and handle, which is derived from the identical Citizen's Band radio term.
+                        Some software products provide services to other systems and have no direct end users.
+                    </p>
+                </section>
+                <section id="content3">
+                    <img src="images/users.png">
+                    <p>
+                        A user is a person who uses a computer or network service. Users generally use
+                        a system or a software product without the technical expertise required to fully
+                        understand it. Power users use advanced features of programs, though they are not
+                        necessarily capable of computer programming and system administration.
+                        A user often has a user account and is identified to the system by a username (or user name).
+                        Other terms for username include login name, screen name (or screenname), nickname (or nick)
+                        and handle, which is derived from the identical Citizen's Band radio term.
+                        Some software products provide services to other systems and have no direct end users.
+                    </p>
+                </section>
+                <section id="content4">
+                    <img src="images/user.png">
+                    <p>
+                        A user is a person who uses a computer or network service. Users generally use
+                        a system or a software product without the technical expertise required to fully
+                        understand it. Power users use advanced features of programs, though they are not
+                        necessarily capable of computer programming and system administration.
+                        A user often has a user account and is identified to the system by a username (or user name).
+                        Other terms for username include login name, screen name (or screenname), nickname (or nick)
+                        and handle, which is derived from the identical Citizen's Band radio term.
+                        Some software products provide services to other systems and have no direct end users.
+                    </p>
+                </section>
+                <section id="content5">
+                    <img src="images/users.png">
+                    <p>
+                        A user is a person who uses a computer or network service. Users generally use
+                        a system or a software product without the technical expertise required to fully
+                        understand it. Power users use advanced features of programs, though they are not
+                        necessarily capable of computer programming and system administration.
+                        A user often has a user account and is identified to the system by a username (or user name).
+                        Other terms for username include login name, screen name (or screenname), nickname (or nick)
+                        and handle, which is derived from the identical Citizen's Band radio term.
+                        Some software products provide services to other systems and have no direct end users.
+                    </p>
+                </section>
+                <section id="content6">
+                    <img src="images/user.png">
+                    <p>
+                        A user is a person who uses a computer or network service. Users generally use
+                        a system or a software product without the technical expertise required to fully
+                        understand it. Power users use advanced features of programs, though they are not
+                        necessarily capable of computer programming and system administration.
+                        A user often has a user account and is identified to the system by a username (or user name).
+                        Other terms for username include login name, screen name (or screenname), nickname (or nick)
+                        and handle, which is derived from the identical Citizen's Band radio term.
+                        Some software products provide services to other systems and have no direct end users.
+                    </p>
+                </section>
+            </div>
+        </div>
+
+        <div class="tooltip">
+            <div class="container">
+
+            </div>
+        </div>
+
         <div class="slayder1"></div>
         <div class="slayder2"></div>
     </main>
@@ -85,6 +260,8 @@
     </footer>
 
     <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/accordion.js"></script>
+
 </div>
 </body>
 </html>

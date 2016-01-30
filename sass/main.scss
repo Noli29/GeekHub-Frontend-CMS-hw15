@@ -2,9 +2,13 @@
 
 @import "components/buttons";
 
-
 @import "layout/layout";
 @import "layout/header";
 @import "layout/footer";
+
+@import "pages/accordion";;
+@import "pages/modal";
+@import "pages/tabs";
+@import "pages/tooltip";
 
 @import "utils/media";
