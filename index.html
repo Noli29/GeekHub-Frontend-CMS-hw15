@@ -3,12 +3,13 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Homework11</title>
+    <title>Homework15</title>
 
     <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,200,200italic,300,900,700italic,700,600,300italic,400italic,600italic' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Lato:400,700,900,300,100' rel='stylesheet' type='text/css'>
 
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" >
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
     <link  href="css/main.css" rel="stylesheet">
 
 
@@ -32,12 +33,12 @@
                             Paperclip
                         </a>
                     </div>
-                    <nav class="navbar navbar-default" role="navigation">
+                    <nav class="navbar navbar-default" role="navigation" id="slowscroll">
                         <ul class="nav navbar-nav left">
                             <li><a href="#">Account</a></li>
                             <li><a href="#">Edit</a></li>
-                            <li><a href="#">Photo</a></li>
-                            <li><a href="#">Users</a></li>
+                            <li><a href="#accordion">Photo</a></li>
+                            <li><a href="#friends"  data-tooltip="Your best friends">Friends</a></li>
                             <li><a href="#">Contacts</a></li>
                             <li><a href="#" class="glyphicon glyphicon-paperclip"></a></li>
                         </ul>
@@ -52,7 +53,27 @@
 
     <main class="m-page">
 
-        <div class="accordion">
+        <div class="account">
+            <div class="container">
+                <h1>Jessica Jones</h1>
+                <div class="text">
+                    <p>Midtown High student Jessica Campbell was present when Peter Parker was bitten by the
+                        irradiated spider which gave him his radioactive powers. She had a crush on him,
+                        and had just plucked up the courage to speak to him when he was distracted by the bite.
+                        She also had a celebrity crush on teen heart-throb Johnny Storm.
+                        Jessica's father received tickets for Disney World from his boss Tony Stark.
+                        On the way home, their car collided with a military convoy carrying radioactive chemicals.
+                        Her family was killed, and, after spending several months in a coma, she awoke, stirred by the
+                        first coming of Galactus outside her hospital room. </p>
+
+                </div>
+                <div class="image">
+                    <img src="images/account.png">
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion" id="accordion">
             <div class="container">
                 <h2>Photo</h2>
                 <section class="accordion_item">
@@ -130,29 +151,30 @@
             </div>
         </div>
 
-        <div class="tabs">
+        <div class="tabs" id="friends">
             <div class="container">
-                <h2>Users</h2>
+                <h2>Friends</h2>
                 <input id="tab1" type="radio" name="tabs" checked>
-                <label for="tab1" title="User 1">User 1</label>
+                <label for="tab1" title="User 1">Cris</label>
 
                 <input id="tab2" type="radio" name="tabs">
-                <label for="tab2" title="User 2">User 2</label>
+                <label for="tab2" title="User 2">Nona</label>
 
                 <input id="tab3" type="radio" name="tabs">
-                <label for="tab3" title="User 3">User 3</label>
+                <label for="tab3" title="User 3">Arina</label>
 
                 <input id="tab4" type="radio" name="tabs">
-                <label for="tab4" title="User 4">User 4</label>
+                <label for="tab4" title="User 4">Den</label>
 
                 <input id="tab5" type="radio" name="tabs">
-                <label for="tab5" title="User 5">User 5</label>
+                <label for="tab5" title="User 5">Mona</label>
 
                 <input id="tab6" type="radio" name="tabs">
-                <label for="tab6" title="User 6">User 6</label>
+                <label for="tab6" title="User 6">Nik</label>
 
                 <section id="content1">
                     <img src="images/users.png">
+                    <h3>Cris</h3>
                     <p>
                         A user is a person who uses a computer or network service. Users generally use
                         a system or a software product without the technical expertise required to fully
@@ -166,6 +188,7 @@
                 </section>
                 <section id="content2">
                     <img src="images/user.png">
+                    <h3>Nona</h3>
                     <p>
                         A user is a person who uses a computer or network service. Users generally use
                         a system or a software product without the technical expertise required to fully
@@ -179,6 +202,7 @@
                 </section>
                 <section id="content3">
                     <img src="images/users.png">
+                    <h3>Arina</h3>
                     <p>
                         A user is a person who uses a computer or network service. Users generally use
                         a system or a software product without the technical expertise required to fully
@@ -192,6 +216,7 @@
                 </section>
                 <section id="content4">
                     <img src="images/user.png">
+                    <h3>Den</h3>
                     <p>
                         A user is a person who uses a computer or network service. Users generally use
                         a system or a software product without the technical expertise required to fully
@@ -205,6 +230,7 @@
                 </section>
                 <section id="content5">
                     <img src="images/users.png">
+                    <h3>Mona</h3>
                     <p>
                         A user is a person who uses a computer or network service. Users generally use
                         a system or a software product without the technical expertise required to fully
@@ -218,6 +244,7 @@
                 </section>
                 <section id="content6">
                     <img src="images/user.png">
+                    <h3>Nik</h3>
                     <p>
                         A user is a person who uses a computer or network service. Users generally use
                         a system or a software product without the technical expertise required to fully
@@ -238,7 +265,78 @@
             </div>
         </div>
 
-        <div class="slayder1"></div>
+        <div class="slayder1">
+            <div id="myCarousel" class="carousel slide hero" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                    <li data-target="#myCarousel" data-slide-to="3"></li>
+                    <li data-target="#myCarousel" data-slide-to="4"></li>
+                </ol>
+
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active slide1">
+                        <img src="image/made.png" alt=""/>
+                        <div class="carousel-caption">
+                            <h1>Made for Designers</h1>
+                            <p>Create your online portfolio in minutes with the professionally and lovingly designed REEN website
+                                template. Customize your site with versatile and easy to use features.</p>
+                            <a href="#" class="btn btn-primary btn-lg green-button text-uppercase">get started now</a>
+                        </div>
+                    </div>
+                    <div class="item slide1">
+                        <img src="image/main.png" alt=""/>
+                        <div class="carousel-caption">
+                            <h1 class="text-right">Fresh and beautiful design</h1>
+                            <p class="text-right">REEN is designed to showcase your talent and put your work in the forefront.
+                                Professionally use of typography and layout that fits your content.</p>
+                            <a href="#" class="btn btn-primary btn-lg green-button text-uppercase">get started now</a>
+                        </div>
+                    </div>
+                    <div class="item slide1">
+                        <img src="image/main3.png" alt=""/>
+                        <div class="carousel-caption">
+                            <h1>Clean and reusable code</h1>
+                            <p>The clean code allows you to easily copy code blocks from content modules and past
+                                them in different places or layouts.</p>
+                            <a href="#" class="btn btn-primary btn-lg green-button text-uppercase">get started now</a>
+                        </div>
+                    </div>
+                    <div class="item slide1">
+                        <img src="image/main1.png" alt=""/>
+                        <div class="carousel-caption">
+                            <h1>Just focus on your creativity</h1>
+                            <p>Take a break from messing around with heavy coding and spend your time brainstorming
+                                ideas for your next project.</p>
+                            <a href="#" class="btn btn-primary btn-lg green-button text-uppercase">get started now</a>
+                        </div>
+                    </div>
+                    <div class="item slide1">
+                        <img src="image/main2.png" alt=""/>
+                        <div class="carousel-caption">
+                            <h1>Showcase your content</h1>
+                            <p>With REEN you have the possibility to create websites for various contents quickly
+                                and easily. Now it's up to you!</p>
+                            <a href="#" class="btn btn-primary btn-lg green-button text-uppercase">get started now</a>
+                        </div>
+                    </div>
+
+
+                    <!-- Left and right controls -->
+                    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+        </div>
         <div class="slayder2"></div>
     </main>
 
@@ -260,6 +358,7 @@
     </footer>
 
     <script src="js/jquery-1.11.3.min.js"></script>
+<script src="js/scrollto.js"></script>
     <script src="js/accordion.js"></script>
 
 </div>

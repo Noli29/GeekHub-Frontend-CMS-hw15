@@ -1,62 +1,30 @@
-.button {
-  display: inline-block;
-  padding: 10px 45px;
-  background-color: #F1BB00;
-  text-decoration: none;
-  transition: .2s linear;
-  a{
-    text-shadow: 0 -1px 0 ;
-    color: $color-white;
-    font-family: $font;
-    font-size: 16px;
-    line-height: 16px;
-  }
+a[data-tooltip] {display:inline-block;position:relative;}
 
-  &:hover {
-    background: #1b6d85;
-    transition: .2s linear;
-    color: #F1BB00;
-  }
+
+a[data-tooltip]:hover:after {
+  border-bottom: 8px solid #fff0f4;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  bottom: 18px;
+  content: "";
+  height: 0;
+  width: 0;
+  left: 25px;
+  top: 30px;
+  position: absolute;
 }
 
-.button-price {
-  display: inline-block;
-  padding: 10px 45px;
-  background-color: #F1BB00;
-  text-decoration: none;
-  transition: .2s linear;
-  a{
-    text-shadow: 0 -1px 0 ;
-    color: $color-white;
-    font-family: $font;
-    font-size: 16px;
-    line-height: 16px;
-  }
-
-  &:hover {
-    background: #1b6d85;
-    transition: .2s linear;
-    color: #F1BB00;
-  }
-}
-
-.price-btn {
-  display: inline-block;
+a[data-tooltip]:hover:before {
+  background: #fff0f4;
+  bottom: -16px;
+  color: #ff4643;
+  content: attr(data-tooltip);
+  font-family: $font;
+  font-size: 14px;
+  font-weight: 100;
+  width: 150px;
+  left: 0;
   padding: 5px 5px;
-  background-color: #F1BB00;
-  text-decoration: none;
-  transition: .2s linear;
-  a{
-    text-shadow: 0 -1px 0 ;
-    color: $color-white;
-    font-family: $font;
-    font-size: 16px;
-    line-height: 16px;
-  }
-
-  &:hover {
-    background: #1b6d85;
-    transition: .2s linear;
-    color: #F1BB00;
-  }
+  position: absolute;
+  border-radius: 5px;
 }

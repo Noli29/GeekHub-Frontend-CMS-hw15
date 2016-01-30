@@ -1,5 +1,6 @@
 main {
   .accordion {
+    background: #c7ddef;
     margin: 0 auto;
     padding-bottom: 15px;
 
@@ -21,7 +22,7 @@ main {
       font-size: 18px;
       color: #eee;
       cursor: pointer;
-      background: #009688;
+      background: #5c59df;
       padding: 10px 55px 10px 15px;
       -webkit-transition: all .2s linear 0;
       -webkit-transition-delay: .2s 0;
@@ -33,7 +34,7 @@ main {
       height: 8px;
       width: 8px;
       display: block;
-      border: 2px solid #fefefe;
+      border: 2px solid #f5e79e;
       border-right-width: 0;
       border-top-width: 0;
       -ms-transform: rotate(-45deg);
@@ -45,7 +46,7 @@ main {
     }
 
     .active_block .title_block:before {
-      border: 2px solid #fefefe;
+      border: 2px solid #f5e79e;
       border-left-width: 0;
       border-bottom-width: 0;
       top: 18px
@@ -63,7 +64,7 @@ main {
       display: none;
       padding: 10px 15px;
       overflow: hidden;
-      background: #f7f7f7
+      background: #c7ddef
     }
 
     .info_item {

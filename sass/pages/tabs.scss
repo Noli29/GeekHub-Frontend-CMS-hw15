@@ -1,9 +1,7 @@
-@import url("http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css");
-
 main {
 
   .tabs {
-
+    background: #ebcccc;
     padding: 50px 0 50px 0;
     margin: 0 auto;
 
@@ -25,11 +23,12 @@ main {
     img{
       max-width: 100%;
       float: left;
+      background: #ffe9e6;
     }
 
     p{
       text-align: $text-c;
-      padding: 25px 0 25px 0;
+
     }
   }
   .tabs input {
@@ -92,6 +91,7 @@ main {
   #tab5:checked ~ #content5,
   #tab6:checked ~ #content6 {
     display: block;
+    background: #ffe9e6;
   }
 
   @media screen and (max-width: 680px) {

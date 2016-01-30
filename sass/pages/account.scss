@@ -1,0 +1,38 @@
+main {
+  .account {
+    background: url("../images/background.png");
+    padding: 25px 0 25px 0;
+
+    h1{
+      color: #5c59df;
+      font-family: $font;
+      font-size: 48px;
+      font-weight: 100;
+      line-height: 36px;
+      text-align: $text-c;
+      padding: 10px 0 40px 0;
+    }
+
+
+    .image{
+      width: 45%;
+      float: left;
+      img{
+        max-width: 100%;
+      }
+    }
+
+    .text{
+      width: 55%;
+      float: left;
+      text-align: $text-c;
+      p {
+        font-family: $font;
+        line-height: 28px;
+        font-size: 14px;
+        color: #521522;
+        font-weight: $font-weight-h1;
+      }
+    }
+  }
+}
