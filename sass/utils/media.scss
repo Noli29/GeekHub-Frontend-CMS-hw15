@@ -1,7 +1,84 @@
-@media screen and (max-width: 767px){}
+@media screen and (min-width: 767px) {
 
-@media screen and (min-width: 768px) {}
+  header .left {
+    padding-left: 0;
+  }
 
-@media (min-width: 768px) and (max-width: 1199px) {
+  .h-page{
+    li a {
+      padding: 10px 0;
+
+    }
+  }
+
+  .h-page .menu {
+    clear: none;
+    float: right;
+    max-height: none;
+  }
+  .h-page .menu-icon {
+    display: none;
+  }
+
+
+  main {
+    .slayders {
+      .item img {
+        background-color: #fff;
+        max-width: 100%;
+        display: block;
+      }
+      h2 {
+        text-transform: uppercase;
+        font-family: "Comic Sans MS", sans-serif;
+        font-size: 78px;
+        font-weight: 900;
+        line-height: 88px;
+        color: #ffa26b;
+      }
+    }
+
+  }
 
 }
+
+@media screen and (max-width: 767px) {
+
+  .h-page{
+    li a {
+      padding: 10px 0;
+
+    }
+  }
+
+  header .left {
+    padding-left: 0;
+  }
+
+  main {
+    .slayders {
+      .item img {
+        background-color: #fff;
+        max-width: 100%;
+        display: block;
+      }
+      h2 {
+        text-transform: uppercase;
+        font-family: "Comic Sans MS", sans-serif;
+        font-size: 18px;
+        font-weight: 900;
+        line-height: 88px;
+        color: #ffa26b;
+      }
+    }
+
+    .account {
+      .text{
+        p {
+          line-height: 18px;
+        }
+      }
+    }
+  }
+}
+
